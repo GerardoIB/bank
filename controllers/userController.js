@@ -12,7 +12,7 @@ export class userController {
             const token = jwt.sign({pk_user: userData.pk_user, role: userData.fk_level,phone:userData.fk_phone}, process.env.JWT_SECRET, {expiresIn: '2h'});
             return  res.cookie('access_token', token, {
                 httpOnly: true,
-                secure: false,
+                secure: true,
                 sameSite: 'lax',
                 maxAge: 2 * 60 * 60 * 1000 // 2 horas
             }).status(200).json({message: 'Inicio de sesión exitoso', user: userData});
