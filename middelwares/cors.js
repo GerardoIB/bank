@@ -1,10 +1,11 @@
 import cors from 'cors';
 
 const allowedOrigins = [
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'https://upa-cafe.vercel.app'  // SIN barra al final
+  "http://localhost:3000",
+  "http://localhost:3001",  // <--- AGREGA ESTO
+  "http://127.0.0.1:3001"
 ];
+
 
 const corsOptions = {
     origin: function (origin, callback) {
