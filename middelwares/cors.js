@@ -4,7 +4,7 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:3001",  // <--- AGREGA ESTO
   "http://127.0.0.1:3001",
-  ' https://bank-w1xz.onrender.com'
+  'https://bank-w1xz.onrender.com'
 ];
 
 
